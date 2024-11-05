@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>figma</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        nav {
+            width: 100%;
+            height: 60px;
+            background-color: #F5F7FA;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+
+        /* navlogo */
+
+        .logo {
+            width: 200px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* links */
+
+        ul {
+            width: 600px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            gap: 40px;
+        }
+
+        a {
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        li {
+            list-style: none;
+            color: black;
+        }
+
+        /* buttonsec */
+
+        .buttonsec {
+            width: 240px;
+            height: 50px;
+            gap: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        button {
+            width: 90px;
+            height: 40px;
+            font-size: 18px;
+            color: #4CAF4F;
+            border-radius: 9px;
+            background-color: #F5F7FA;
+            border: none;
+            font-weight: 500;
+            
+        }
+
+        /* loginsec */
+        .loginsec{
+            width: 100px;
+            height: 300px;
+            position: absolute;
+            background-color: red;
+            display: flex;
+        }
+
+        button:hover {
+            background-color: #4CAF4F;
+            color: white;
+        }
+
+        /* herosec */
+
+        .hero {
+            width: 100%;
+            height: 400px;
+            background-color: #F5F7FA;
+            display: flex;
+
+        }
+
+        .herodiv {
+            width: 80%;
+            height: auto;
+            margin-top: 100px;
+            margin-left: 200px;
+        }
+
+        p {
+            font-size: 40px;
+            font-weight: bold;
+        }
+
+        .smallpara {
+            font-size: 18px;
+            margin-top: 10px;
+            font-weight: lighter;
+        }
+
+        .herosecbutton {
+            width: 90px;
+            margin-top: 20px;
+            height: 40px;
+            font-size: 16px;
+            background-color: #4CAF4F;
+            border-radius: 4px;
+            color: #F5F7FA;
+            border: none;
+            font-weight: 500;
+        }
+
+        .herodivsec {
+            width: 80%;
+            height: 400px;
+            padding: 50px 0px;
+        }
+
+        .herodivimg {
+            width: 80%;
+            height: 300px;
+        }
+
+        /* clientsec */
+        .clientsec {
+            width: 100%;
+            height: auto;
+            padding: 0px 200px;
+        }
+
+        .clientinfo {
+            width: 100%;
+            height: 80px;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 35px;
+        }
+
+        .info {
+            text-align: center;
+            font-size: 18px;
+            font-weight: lighter;
+            margin-top: 7px;
+            font-family: monospace;
+        }
+
+        .iconsec {
+            width: 100%;
+            height: 100px;
+
+        }
+
+        .clientslogo {
+            width: 100%;
+            height: 100px;
+        }
+
+        /* cardsec */
+        .cardsec {
+            width: 100%;
+            height: auto;
+            padding: 50px 200px;
+        }
+
+        .cardinfo {
+            width: 100%;
+            height: 110px;
+        }
+
+        .infocard {
+            text-align: center;
+            font-size: 15px;
+            font-weight: lighter;
+            margin-top: 7px;
+            font-family: monospace;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 38px;
+        }
+
+        .containercards {
+            width: 100%;
+            height: auto;
+            display: flex;
+            margin-top: 20px;
+            justify-content: space-between;
+        }
+
+        .card {
+            width: 300px;
+            height: 260px;
+        }
+        
+
+        .cardsimg {
+            width: 300px;
+            height: 260px;
+        }
+        .cardsimg:hover{
+            border: 3px solid #4CAF4F;
+            border-radius: 10px;
+            box-shadow: 1px 1px 10px black;
+            
+        }
+        /* learnmoresec */
+
+        .learnmoresec{
+            width: 100%;
+            height: 400px;
+            background-color: blueviolet;
+            display: flex;
+        }
+        .learnmoresecpic{
+            width: 50%;
+            height: 500px;
+            margin-left: 200px;
+        }
+        .learnpic{
+            width: 80%;
+            height: 500px;
+        }
+        .learndiv{
+            width: 80%;
+            height: auto;
+            margin-top: 100px;
+            margin-right: 200px;
+            /* margin-left: 200px; */
+        }
+        .herosecbuttonlearn{
+            width: 120px;
+            margin-top: 10px;
+            height: 40px;
+            font-size: 16px;
+            background-color: #4CAF4F;
+            border-radius: 4px;
+            color: #F5F7FA;
+            border: none;
+            font-weight: 500;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <img src="./Logo.svg">
+        </div>
+        <ul>
+            <a href="#">
+                <li>Home</li>
+            </a>
+            <a href="#">
+                <li>Service</li>
+            </a>
+            <a href="#">
+                <li>Feature</li>
+            </a>
+            <a href="#">
+                <li>Product</li>
+            </a>
+            <a href="#">
+                <li>Testimonial</li>
+            </a>
+            <a href="#">
+                <li>FAQ</li>
+            </a>
+        </ul>
+        <div class="buttonsec">
+            <button >
+                Login
+            </button>
+            <div class="loginsec">
+
+            </div>
+            <button>
+                Sign up
+            </button>
+        </div>
+
+    </nav>
+
+    <!-- herosection -->
+
+    <div class="hero">
+        <div class="herodiv">
+            <p>Lesson and insights<br>from 8 years</p>
+            <p class="smallpara">Where to grow your business as a phtographer: site or social media?</p>
+            <button class="herosecbutton">
+                Register
+            </button>
+        </div>
+
+        <div class="herodivsec">
+            <img src="./Illustration.svg" class="herodivimg">
+        </div>
+    </div>
+
+    <!-- clientsec -->
+
+    <div class="clientsec">
+        <div class="clientinfo">
+            <h1>
+                Our Clients
+            </h1>
+            <p class="info">
+                We have working with some Fortune 500+ clients
+            </p>
+        </div>
+        <div class="iconsec">
+            <img src="./Clients Logos.svg" class="clientslogo">
+        </div>
+    </div>
+
+    <!-- cardsec -->
+    <div class="cardsec">
+        <div class="cardinfo">
+            <h2>
+                Manage your entire community<br>in a single system
+            </h2>
+            <p class="infocard">
+                Who is Nextcent suitable for?
+            </p>
+        </div>
+        <div class="containercards">
+            <div class="card">
+                <img src="./Membership Organizatios.svg" class="cardsimg">
+            </div>
+            <div class="card">
+                <img src="./National Associations.svg" class="cardsimg">
+            </div>
+            <div class="card">
+                <img src="./National Associations (1).svg" class="cardsimg">
+            </div>
+        </div>
+    </div>
+
+    <!-- learnmoresec -->
+    <div class="learnmoresec">
+        <div class="learnmoresecpic">
+            <img src="./Frame 35 (1).svg" class="learnpic">
+        </div>
+        <div class="learndiv">
+            <p>The unseen of spending three<br>years at Pixelgrade</p>
+            <p class="smallpara">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet justo ipsum. Sed accumsan quam vitae est varius fringilla. Pellentesque placerat vestibulum lorem sed porta. Nullam mattis tristique iaculis. Nullam pulvinar sit amet risus pretium auctor. Etiam quis massa pulvinar, aliquam quam vitae, tempus sem. Donec elementum pulvinar odio.</p>
+            <button class="herosecbuttonlearn">
+            Learn More
+            </button>
+        </div>
+
+        
+    </div>
+</body>
+
+</html>
